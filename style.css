@@ -1,0 +1,32 @@
+*{
+    font-family:  cursive, 'Lucida Sans';
+}
+body{
+    margin: 1% 2%;
+}
+.nav-link:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.progress{
+    margin: 1% 0px;
+}
+
+.d-flex img{
+    height: 30px;
+    width: 30px;
+}
+.navbar{
+    background-image: linear-gradient(to right, #8bf0ba,#94f0f1,#ffdc6a);
+}
+@media screen and (min-width: 480px){
+    .card-body{
+        display: inline-flex;
+    }
+    .card-body .details{
+        margin: 1%;
+        padding: 1%;
+        float: right;
+    }
+}
