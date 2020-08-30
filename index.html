@@ -3,6 +3,10 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Satyagopal Kothuru Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of Satyagopal Kothuru, which has all the details of me.">
+    <meta name="author" content="Satyagopal Kothuru">
+    <meta name="keywords" content="Satyagopal, satya gopal, satyagopalkothuru, satyagopal kothuru, satyagopal portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="sg.svg" type="image/svg+xml">
@@ -11,6 +15,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded" id="outerboxcontainer">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,26 +34,34 @@
           <a class="nav-link" href="#">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
-
-  <div class="jumbotron" id="mypersonaldetails">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">My name is <strong>Satyagopal Kothuru </strong>- Learner, Web Developer, Android Developer, Machine Learning Enthusiast, Interested in new Technologies...</p>
-    <hr class="my-4">
-    <p>I am an Adoptable, Honest, Punctual, well communicative and Friendly Person.</p>
-    <p>A Good Chess Player ☺. If you want to try, Challenge me...</p>
-    <p>Lover of Basket Ball.</p>
-    <p>Usually plays Badminton, Kabbadi.</p>
-    <a class="btn btn-primary btn-lg" href="#accordionExample" role="button">Want to know more</a>
-    <a class="btn btn-primary btn-lg" href="#accordionExample" role="button">Want to know about my professional life</a>
+  </header>
+ 
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+          
+        </div>
+      </div>
+  <section id="desc">
+  <div class="jumbotron" id="mypersonaldetails">  
+      <h1 class="display-4">Hello, world!!!</h1>
+      <h3>Let us have a friendly talk...</h3>
+      <p class="lead">My name is <strong>Satyagopal Kothuru </strong>- Learner, Interested in new Technologies...</p>
+      <!-- , Web Developer, Android Developer, Machine Learning Enthusiast -->
+      <hr class="my-4">
+      <p>I am an Adoptable, Honest, Punctual, well communicative and Friendly Person.</p>
+      <p>A Good Chess Player. If you wanna try &#129322, Challenge me...&#129309</p>
+      <p>Lover of Basket Ball.</p>
+      <p>Usually plays Badminton, Kabbadi.</p>
+      <a class="btn btn-lg" href="#accordionExample" role="button" style="background-color:  #8bf0ba;">Kick me to know more &#129307</a>
   </div>
-
+</section>
   <div class="accordion shadow p-3 mb-5 rounded" id="accordionExample">
-    <h3>Education Details</h3>
+    <h3>Studied at</h3>
     <div class="card">
       <div class="card-header" id="headingOne">
         <h2 class="mb-0">
@@ -122,7 +136,7 @@
   <div class="progress">
     <div class="progress-bar bg-success progress-bar-animated text-left" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> &nbsp PYTHON</div>
   </div>
-  <div class="progress">
+  <!-- <div class="progress">
     <div class="progress-bar bg-info text-left" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> &nbsp HTML</div>
   </div>
   <div class="progress">
@@ -130,8 +144,28 @@
   </div>
   <div class="progress">
     <div class="progress-bar bg-danger text-left" role="progressbar" style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> &nbsp MACHINE LEARNING</div>
-  </div>
+  </div> -->
 </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 
 <footer class="py-3">
   <div class="container">
@@ -140,10 +174,10 @@
       
       <h5 class="ml-0 ml-md-3 mb-0 text-decoration-none"><a href="index.html">Satyagopal Kothuru</a></h5>
       <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mypersonaldetails">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Internships</a></li>
+        <li class="nav-item"><a class="nav-link" href="#accordionExample">Education</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">Internships</a></li> -->
       </ul>
     </div>
     <div class="d-flex justify-content-center align-items-center justify-content-md-between flex-column flex-md-row mx-3 mt-3">
@@ -154,6 +188,7 @@
     </div>
   </div>
 </footer>
+
 
 </body>
 </html>
