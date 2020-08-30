@@ -18,9 +18,68 @@ body{
     width: 30px;
 }
 .navbar{
-    background-image: linear-gradient(to right, #8bf0ba,#94f0f1,#ffdc6a);
+    background-image: linear-gradient(to right, #8bf0ba,#94f0f1,#ffdc6a,#ffdc6a);
 }
-@media screen and (min-width: 480px){
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: #8bf0ba;
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+  
+  #myBtn:hover {
+    background: #ffdc6a  url("rocket.svg");
+    color: transparent;
+    text-shadow: none;
+  }
+
+  .jumbotron{
+    background-color: transparent;
+    color: #ffffff;
+    text-shadow: #ffff;
+    border-radius: 10px;
+  }
+  #desc{
+    background-image: url("backg.jpg");
+    background-size: cover;
+    border-radius: 20px;
+  }
+  hr{
+    background-color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: 0 0 15px;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #8bf0ba,#94f0f1,#ffdc6a,#ffdc6a);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  .nav-link{
+      padding: 10px;
+      margin: 0px 10px;
+  }
+
+  @media screen and (min-width: 480px){
     .card-body{
         display: inline-flex;
     }
