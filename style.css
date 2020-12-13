@@ -1,5 +1,5 @@
 *{
-    font-family:  cursive, 'Lucida Sans';
+    font-family:    Arial,'Lucida Sans',Times;
 }
 body{
     margin: 1% 2%;
@@ -17,6 +17,9 @@ body{
     height: 30px;
     width: 30px;
 }
+.d-flex img:hover{
+  transform: translateY(-2px);
+}
 .navbar{
     background-image: linear-gradient(to right, #8bf0ba,#94f0f1,#ffdc6a,#ffdc6a);
 }
@@ -25,7 +28,7 @@ body{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 150px; 
+    right: 20px; 
     z-index: 99; 
     border: none;
     outline: none;
@@ -78,7 +81,9 @@ body{
       padding: 10px;
       margin: 0px 10px;
   }
-
+#cv:hover {
+background-image: linear-gradient(to left, #8bf0ba,#94f0f1,#ffdc6a,#ffdc6a);
+}
   @media screen and (min-width: 480px){
     .card-body{
         display: inline-flex;
