@@ -1,7 +1,7 @@
 *{
     font-family:    Arial,'Lucida Sans',Times;
 }
-body{
+section{
     margin: 1% 2%;
 }
 .nav-link:hover {
@@ -52,7 +52,6 @@ body{
 
 .jumbotron{
     color: black;
-    
 }
 
 hr{
