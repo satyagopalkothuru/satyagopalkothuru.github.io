@@ -4,11 +4,12 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Satyagopal Kothuru Portfolio</title>
     <meta charset="UTF-8">
     <meta name="description" content="Portfolio of Satyagopal Kothuru, which has all the details of me.">
     <meta name="author" content="Satyagopal Kothuru">
-    <!-- <meta name="keywords" content="Satyagopal, satya gopal, satyagopalkothuru, satyagopal kothuru, satyagopal portfolio"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="sg.svg" type="image/svg+xml">
@@ -25,30 +26,39 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v9.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="115815790275951" theme_color="#a695c7"
-        logged_in_greeting="Hello! Nice to see you here. What can I do for you?"
-        logged_out_greeting="Hello! Nice to see you here. What can I do for you?">
+    
+    <svg id="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+        <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+    </svg>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">        
+                
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="myphoto.jpeg" style="width: 150px;border-radius: 100%;margin: 0 25%;">
+            <h3 class="text-center" id="offcanvasRightLabel">Satyagopal Kothuru</h3>
+            <ul class="nav flex-column text-center">
+                <li class="nav-item"><a class="nav-link" href="#mypersonaldetails">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#accordionExample">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#techs">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1d5Hd_dYy-CEYsVIat9K6TCU1lsG0iN4V/view?usp=sharing" target="_blank">View Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.whatsapp.com/send?phone=918187002477" target="_blank">WhatsApp</a></li>
+            </ul>
+            <div class="d-flex justify-content-center">
+                <a href="https://github.com/satyagopalkothuru/" target="_blank">
+                    <img class="mr-3" src="github.svg" alt="G">
+                </a>
+                <a href="https://linkedin.com/in/satyagopalkothuru" target="_blank">
+                    <img class="mr-3" src="linkedin.svg" alt="L">
+                </a>
+                <a href="mailto:satyagopalkothuru@gmail.com">
+                    <img class="mr-3" src="gmail.svg" alt="M">
+                </a>
+            </div>
+        </div>
     </div>
-
     <div class="jumbotron" id="mypersonaldetails">
         <div class="card-body">
             <img src="myphoto.jpeg" style="width: 300px;padding-right: 3%;">
@@ -441,6 +451,10 @@
 
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <a id = "whatsapp" href="https://api.whatsapp.com/send?phone=918187002477" target="_blank">
+        <img src="whatsapp.gif" alt="Whatsapp">
+    </a>
     <script>
         mybutton = document.getElementById("myBtn");
 

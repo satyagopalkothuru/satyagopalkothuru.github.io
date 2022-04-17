@@ -43,13 +43,32 @@ section{
     border-radius: 50px;
     font-size: 15px;
 }
+#whatsapp {
+    
+    position: fixed;
+    bottom: 30px;
+    right: 30px; 
+    z-index: 99; 
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#whatsapp img{
+    height: 60px;
+    border-radius: 40px;
+}
   
 #myBtn:hover {
     background: #e9ecef  url("rocket.svg");
     color: transparent;
     text-shadow: none;
 }
-
+#menu{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
 .jumbotron{
     color: black;
 }
