@@ -44,7 +44,7 @@
                 <li class="nav-item"><a class="nav-link" href="#techs">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1d5Hd_dYy-CEYsVIat9K6TCU1lsG0iN4V/view?usp=sharing" target="_blank">View Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://api.whatsapp.com/send?phone=918187002477" target="_blank">WhatsApp</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://wa.me/918187002477" target="_blank">WhatsApp</a></li>
             </ul>
             <div class="d-flex justify-content-center">
                 <a href="https://github.com/satyagopalkothuru/" target="_blank">
@@ -78,19 +78,48 @@
             <h3>Summary</h3>
             <div class="row" id="summary">
                 <div class="col-lg-4">
-                    <h1>180</h1>
+                    <h1 id="credits">0</h1>
                     <p>Credits</p>
                 </div>
                 <div class="col-lg-4">
-                    <h1>1</h1>
+                    <h1 id="internships">0</h1>
                     <p>Internships</p>
                 </div>
                 <div class="col-lg-4">
-                    <h1>5</h1>
+                    <h1 id="projects">0</h1>
                     <p>Projects</p>
                 </div>
             </div>
         </div>
+
+        <script>
+            credits = document.getElementById("credits");
+            internships = document.getElementById("internships");
+            projects = document.getElementById("projects");
+            var i = 0, howManyTimes = 180;
+
+            function f() {
+                if (i<=36){
+                    credits.innerHTML = i*5;
+                }
+                if (i<=1){
+                    internships.innerHTML = i*1;
+                }
+                if (i<=5){
+                    projects.innerHTML = i*1;
+                }
+                i++;
+                if (i <= 5) {
+                    setTimeout(f, 300);
+                }
+                if (i > 5 && i<181) {
+                    setTimeout(f, 100);
+                }
+                
+            }
+            f();
+        </script>
+
 
         <div class="accordion shadow p-3 mb-5 rounded" id="accordionExample">
             <h3>Education</h3>
@@ -452,7 +481,7 @@
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <a id = "whatsapp" href="https://api.whatsapp.com/send?phone=918187002477" target="_blank">
+    <a id = "whatsapp" href="https://wa.me/918187002477" target="_blank">
         <img src="whatsapp.gif" alt="Whatsapp">
     </a>
     <script>
